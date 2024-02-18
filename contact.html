@@ -1,0 +1,146 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <style>
+  .contactFormcard{
+      border-radius: 15px;
+  }
+  
+
+  </style>
+  <body style="background-color: transparent;">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <!-- Logo on the left side -->
+          <div class="navbar">
+              <a class="navbar-brand" href="index.html">
+                  <span class="company-name">Portfo</span> <span class="highlighted-text">lio</span>
+              </a>
+          </div>
+  
+          <!-- Hamburger button for small screens -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Centered navigation links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item nav-item1">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item nav-item1 me-2">
+                      <a class="nav-link" href="about_me.html">About Me</a>
+                  </li>
+                  <li class="nav-item nav-item1 me-2">
+                      <a class="nav-link" href="project.html">Projects</a>
+                  </li>
+                  <li class="nav-item nav-item1 me-2">
+                      <a class="nav-link" href="skill.html">Skills</a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                      <a class="nav-link" href="contact.html">Contacts</a>
+                  </li>
+              </ul>
+  
+              <!-- "Sign In" and "Book Demo" links on the right side -->
+              <ul class="navbar-nav ml-lg-auto">
+                  <li class="nav-item">
+                      <a class="l1 text-left btn btn-danger" id="downloadButton" href="#">RESUME</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <script src="script.js"></script>
+
+
+
+  <div class="contact-us">
+      <h2 class="text-white text-center">Contact Us</h2>
+      <p class="text-center text-white">You can contact me if you want anything to say.</p>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+
+      <!-- Contact Details Column -->
+      <div class="col-lg-4 text-white p-5 mx-5 my-5 contactInfocard">
+        <ul class="list-unstyled">
+        <p class="text-primary ">Email</p>
+          <li><i class="fas fa-envelope"></i> elexis.falceso@cvsu.edu.ph</li>
+          <p class="text-primary mt-4">Phone</p>
+          <li><i class="fas fa-phone"></i> 0950594815</li>
+          <p class="text-primary mt-4">Address</p>
+          <li><i class="fas fa-map-marker-alt"></i> Block 24 Lot 3 Baranggay Santo Niño - 1 Dasmariñas Cavite</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form Column -->
+      <div class="col-lg-6 bg-white p-5 mx-2 contactFormcard">
+        <h3 class="mb-4">Send Message</h3>
+        <form id="contactForm" action="" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="" placeholder="Enter your name" required>
+            <span><?php echo $name_err; ?></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" value="" placeholder="Enter your email" required>
+            <span><?php echo $email_err; ?></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4" name="message" placeholder="Enter your message" required></textarea>
+            <span><?php echo $message_err; ?></span>
+          </div>
+          <input type="submit" class="btn btn-primary" value="Send" onclick="submitForm()">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+
+  
+<div style="border-radius: 0; display: flex; flex-direction: column; align-items: center; align-items: center;" class="jumbotron3">
+  <h1 class="About-Me1">Elexis Falceso</h1>
+  <div class="social-icons" style="display: flex; justify-content: center; margin-left: 20px;">
+      <a href="https://www.facebook.com/profile.php?id=100079847088138" target="_blank" class="social-icon" rel="noopener noreferrer">
+          <img src="facebook-removebg-preview.png" alt="Go to our Facebook page">
+      </a>
+      <a href="https://www.instagram.com/ashirro21/" target="_blank" class="social-icon" rel="noopener noreferrer">
+          <img src="instagram-removebg-preview.png" alt="Go to our Instagram account">
+      </a>
+      <a href="https://twitter.com/F98434Elexis" target="_blank" class="social-icon" rel="noopener noreferrer">
+          <img src="tweeter-removebg-preview.png" alt="Go to our Twitter account">
+      </a>
+      <a href="https://www.linkedin.com/in/elexis-falceso-b223102b5/" target="_blank" class="social-icon" rel="noopener noreferrer">
+          <img src="l9.png" alt="Go to our Linkin account">
+      </a>
+
+
+  </div>
+
+</div>
+
+<p class="footer">Copyright By Elexis Falceso</p>
+
+  </body>
+  </html>
