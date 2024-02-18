@@ -267,3 +267,50 @@ margin: 0 10px;
 
     }
 
+
+
+
+    @media (max-width: 768px) {
+        img {
+            margin-left: 0;
+            max-width: 100%;
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+
+        .desc {
+            margin-right: 0;
+        }
+
+        .img-fluid{
+            width: 50rem;
+        }
+
+        .button {
+            /* Adjust styles for smaller screens */
+            width: 100%; /* Example: Make the button full width on smaller screens */
+        }
+        
+
+
+    }
+
+
+
+@media (max-width: 320px) {
+       
+
+        .description {
+           width: 100%;
+        }
+
+        .desc{
+            width: 100%;
+        }
+
+        
+
+
+    }
